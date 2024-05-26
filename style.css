@@ -78,6 +78,7 @@ body{
 }
 .yazi{
     font-size: 5rem;
+    font-weight: bold;
 }
 
 @media (max-width: 1250px) {
@@ -89,6 +90,27 @@ body{
         margin-left: 100px;
     }
     .yazi{
+        text-align: center;
+    }
+}
+
+.container .image{
+    width: 500px;
+}
+.container .text{
+    color: #fff;
+    font-size: 2.2rem;
+    margin-left: 700px;
+    margin-top: 10px;
+}
+@media (max-width: 1470px) {
+    .container .text{
+        margin-left: 500px;
+    }
+}
+@media (max-width: 968px) {
+    .container .text{
+        margin-left: 0;
         text-align: center;
     }
 }
