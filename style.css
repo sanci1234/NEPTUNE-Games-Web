@@ -13,6 +13,11 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    overflow-x: hidden;
 }
 .navbar{
     color: #fff;
@@ -20,6 +25,7 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar img{
     cursor: pointer;
     margin-top: 20px;
@@ -33,15 +39,16 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
-    gap: 1rem;
+    gap: 4rem;
     cursor: pointer;
+    font-weight: bold;
 }
 .navbar a{
     margin: 20px;
     color: #fff;
     font-size: 1.6rem;
 }
-@media (max-width: 960px) {
+@media (max-width: 1150px) {
     .navbar{
         display: flex;
         justify-content: space-around;
@@ -54,12 +61,15 @@ body{
         display: none;
     }
 }
-@media (max-width: 850px) {
-    
+@media (max-width: 1050px) {
     .navbar ul{
         display: none;
     }
-   
+}
+@media (max-width: 1050px) {
+    .navbar img{
+        margin-left: 500px;
+    }
 }
 
 .section{
@@ -77,9 +87,10 @@ body{
     width:100%;
 }
 .yazi{
-    font-size: 5rem;
-    font-weight: bold;
+    width: 650px;
+    
 }
+
 
 @media (max-width: 1250px) {
     .section{
@@ -87,21 +98,34 @@ body{
         overflow-x: hidden;
     }
     .foto{
-        margin-left: 100px;
+        margin-left: -300px;
     }
     .yazi{
         text-align: center;
     }
 }
+@media (max-width: 1050px) {
+    .foto{
+        margin-left: 150px;
+    }
+}
+
 
 .container .image{
     width: 500px;
 }
+@media (max-width: 1470px) {
+    .container .image{
+        margin-left: 350px;
+    }
+}
 .container .text{
     color: #fff;
     font-size: 2.2rem;
+    width: 800px;
+    text-align: center;
     margin-left: 700px;
-    margin-top: 10px;
+    
 }
 @media (max-width: 1470px) {
     .container .text{
@@ -110,7 +134,65 @@ body{
 }
 @media (max-width: 968px) {
     .container .text{
-        margin-left: 0;
+        margin-left: 250px;
         text-align: center;
     }
 }
+
+.games h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+.first-div,.second-div{
+    color: #fff;
+    text-align: center;
+    max-width: 650px;
+}
+.text h2{
+    word-wrap: break-word;
+    font-size: 2rem;
+}
+.text p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: start;
+}
+.btn{
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.btn i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 968px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about > div {
+        max-width: 500px; 
+    }
+}
+
